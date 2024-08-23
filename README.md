@@ -182,8 +182,8 @@ To compute the factorial of a number N stored in memory location 200. The result
 	
 	1. ADDI  R10, R0, 200     //Store 200 in R10
 	2. ADDI  R2, R0, 1        //Load R2 with 1
-	3. LW R3, 0(R10)          //Load R3 with Mem[100]
-	4. LOOP: MUL R2, R2,R3    //Store R2 wuth the product of R2 and R3
+	3. LW R3, 0(R10)          //Load R3 with Mem[200]
+	4. LOOP: MUL R2, R2,R3    //Store R2 with the product of R2 and R3
 	5. SUBI R3, R3, 1         //Decrement R3 by 1
 	6. BNEQZ R3, LOOP         //Not zero repeat loop
 	7. SW R2, -2(R10)         //Store the result of R3 in Mem[198]
